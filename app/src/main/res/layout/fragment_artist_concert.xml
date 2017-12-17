@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jayjaybinks.github.com.concertsforyou.ConcertFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:layout_width="0px"
+            android:layout_height="0px">
+
+            <ImageView
+                android:id="@+id/artist_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:src="@android:drawable/btn_star_big_on" />
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_toRightOf="@+id/artist_image"
+                android:text="Artist Name"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/concert_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/artist_name"
+                android:layout_marginLeft="50px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/artist_image"
+                android:text="Concert date" />
+
+            <TextView
+                android:id="@+id/venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/artist_name"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="20px"
+                android:layout_toEndOf="@+id/concert_date"
+                android:layout_toRightOf="@+id/artist_image"
+                android:text="Venue name" />
+        </TableRow>
+    </TableLayout>
+
+
+</FrameLayout>
